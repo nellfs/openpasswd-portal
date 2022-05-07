@@ -11,14 +11,14 @@ class Layout extends React.Component<ILayoutProps> {
     return (
       <div className="flex flex-col h-screen">
         <nav className="bg-gray-800">
-          <div className="px-2 lg:px-8">
-            <div className="flex items-center h-16">
+          <div className="flex justify-center px-2 lg:px-8">
+            <div className="flex justify-between max-w-sm items-center h-16">
               <Link className="pl-4 text-2xl font-bold text-white" to="/">
                 OpenPasswd
               </Link>
-              <div className="flex-grow px-2 text-mg font-bold text-white">
+              <div className="flex px-2 text-mg font-bold text-white">
                 <a
-                  className="flex items-center"
+                  className="flex pl-5 items-center"
                   target="_blank"
                   href="https://github.com/openpasswd"
                 >
