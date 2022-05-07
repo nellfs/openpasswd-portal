@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 interface ILayoutProps {
-  children: JSX.Element
+  children: JSX.Element;
 }
 
 class Layout extends React.Component<ILayoutProps> {
@@ -11,12 +11,26 @@ class Layout extends React.Component<ILayoutProps> {
     return (
       <div className="flex flex-col h-screen">
         <nav className="bg-gray-800">
-          <div className="px-6 md:px-4 lg:px-8">
-            <div className="flex items-center justify-between h-16">
-              <Link className="text-2xl font-bold text-white" to="/">
+          <div className="px-2 lg:px-8">
+            <div className="flex items-center h-16">
+              <Link className="pl-4 text-2xl font-bold text-white" to="/">
                 OpenPasswd
               </Link>
-              <div className="text-mg font-bold text-white">
+              <div className="flex-grow px-2 text-mg font-bold text-white">
+                <a
+                  className="flex items-center"
+                  target="_blank"
+                  href="https://github.com/openpasswd"
+                >
+                  <img
+                    className="bg-white rounded-full"
+                    src="icons8-github-30.png"
+                    alt="github"
+                  />
+                  <span className="px-2">Github</span>
+                </a>
+              </div>
+              <div className="text-mg pr-4 font-bold text-white">
                 <a href="//console.openpasswd.com">Login</a>
               </div>
             </div>
