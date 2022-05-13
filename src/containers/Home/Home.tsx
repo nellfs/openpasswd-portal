@@ -36,7 +36,7 @@ function Home() {
           <div className='bg-sky-500 h-72 w-72 rounded-lg drop-shadow-lg'>
             <h1 className='flex justify-center md:text-2xl text-3xl mt-2'>
               It's all yours!</h1>
-            <h2 className='text-slate-200 flex justify-center md:text-1xl pl-2 pr-2'>You can deploy anyware you trust!</h2>
+            <h2 className='text-slate-200 flex justify-center md:text-1xl pl-2 pr-2'>You can deploy anywhere you trust!</h2>
             <div className='flex flex-col'>
               <CloudIcon className='h-44' />
               <ChevronDoubleUpIcon className='h-8 animate-bounce' />
